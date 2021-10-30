@@ -27,7 +27,7 @@ const data = {
       label: "Project",
       description: "this is the description",
       year: "2021",
-      imagePath: "placeholder600.png",
+      imagePath: "vysio_dash.png",
       route: "/vysio/"
     },
     {

@@ -13,7 +13,7 @@ const Section = ({ data }) => {
         <p class="uppercase my-1 text-sm lg:text-lg">{year}</p>
       </div>
       <div class="p-2">
-        <img class="h-32 w-48 md:h-48 md:w-64 xl:h-64 xl:w-96" src={imagePath} alt={title} />
+        <img class="w-48 md:w-108 xl:w-144" src={imagePath} alt={title} />
       </div>
     </Link>
   )

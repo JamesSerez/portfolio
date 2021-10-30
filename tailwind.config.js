@@ -9,7 +9,11 @@ module.exports = {
       },
       colors: {
         primary: "#40C365"
-      }
+      },
+      spacing: {
+        '144': '36rem',
+        '108': '27rem',
+      },
     },
   },
   variants: {
