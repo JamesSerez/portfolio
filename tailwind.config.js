@@ -8,7 +8,7 @@ module.exports = {
         'body': ['Poppins', 'sans-serif'],
       },
       colors: {
-        primary: "#0085ff"
+        primary: "#40C365"
       }
     },
   },
