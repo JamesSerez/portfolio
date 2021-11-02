@@ -6,18 +6,23 @@ module.exports = {
       fontFamily: {
         'sans': ['Poppins', 'sans-serif'],
         'body': ['Poppins', 'sans-serif'],
+        'extrabold': ['Poppins', 'sans-serif', 800],
       },
       colors: {
-        primary: "#40C365"
+        primary: "#0055A4"
       },
       spacing: {
         '144': '36rem',
+        '168': '42rem',
+        '180': '45rem',
         '108': '27rem',
       },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      animation: ['hover'],
+    },
   },
   plugins: [],
 }

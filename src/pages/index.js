@@ -3,7 +3,9 @@ import Section from '../components/Section';
 
 // data
 const data = {
+  //imagePath: "logo.png",
   name: "James Serez",
+  image: "logo.png",
   links: [
     {
       text: "Email",
@@ -35,7 +37,7 @@ const data = {
       label: "Work",
       description: "this is the description",
       year: "2020",
-      imagePath: "placeholder600.png",
+      imagePath: "vysio_dash.png",
       route: "/manulife/"
     },
     {
@@ -43,7 +45,7 @@ const data = {
       label: "Work",
       description: "this is the description",
       year: "2019",
-      imagePath: "placeholder600.png",
+      imagePath: "vysio_dash.png",
       route: "/purolator/"
     },
     {
@@ -51,7 +53,7 @@ const data = {
       label: "Project",
       description: "this is the description",
       year: "2020",
-      imagePath: "placeholder600.png",
+      imagePath: "vysio_dash.png",
       route: "/fingo/"
     },
   ]
@@ -61,14 +63,16 @@ const data = {
 const IndexPage = () => {
   return (
     <main class="min-h-screen min-w-screen dark:bg-black">
-      <div class="mx-auto min-h-screen w-full sm:w-3/4 xl:w-2/3 pt-10 md:pt-16 lg:pt-28">
+      <div class="mx-auto min-h-screen w-full sm:w-3/4 xl:w-2/3 2xl:w-1/2 pt-10 md:pt-16 lg:pt-28">
       <div class="flex flex-col px-3 md:px-1">
+        <img class="xs:w-2 sm:w-6 md:w-12 xl:w-12 2xl:w-12 pb-1" src={data.image} />
         <div class="w-full h-full mb-6 sm:mb-12 md:mb-16 lg:mb-20">
-          <p class="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl dark:text-white">{data.name}</p>
+        
+          <p class="font-medium text-xl sm:text-2xl md:text-2xl lg:text-xl dark:text-white">{data.name}</p>
           <div class="flex flex-row space-x-4 px-1">
             {
               data?.links?.map((link) => (
-                <a class="dark:text-white hover:text-primary text-sm lg:text-lg" href={link.url} target={link.newTab ? "_blank" : "_self"}>{link.text}</a>
+                <a class="text-gray-500 font-normal dark:text-white hover:text-primary text-sm lg:text-md" href={link.url} target={link.newTab ? "_blank" : "_self"}>{link.text}</a>
               ))
             }
           </div>

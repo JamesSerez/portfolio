@@ -2,3 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins'), url(./src/styles/fonts/Poppins-ExtraBold.ttf) format('ttf');
+};*/
