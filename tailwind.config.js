@@ -17,11 +17,16 @@ module.exports = {
         '180': '45rem',
         '108': '27rem',
       },
+      logo: (theme) => ({
+        'logo-black': 'logo.png',
+        'logo-white': 'logo_white.png',
+      }),
     },
   },
   variants: {
     extend: {
       animation: ['hover'],
+      logo: ['dark'],
     },
   },
   plugins: [],
