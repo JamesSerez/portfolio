@@ -53,7 +53,7 @@ const data = {
       label: "Project",
       description: "this is the description",
       year: "2020",
-      imagePath: "vysio_dash.png",
+      imagePath: "fingo.png",
       route: "/fingo/"
     },
   ]
