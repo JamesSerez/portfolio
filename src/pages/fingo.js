@@ -2,7 +2,7 @@ import React from 'react'
 
 const data = {
   title: "Fingo",
-  description: "this is a description"
+  description: "Creating financial literacy through iterative exposure to investment markets and metrics. More info arriving by Jan 21st!"
 }
 
 const Fingo = () => {

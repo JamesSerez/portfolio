@@ -9,7 +9,7 @@ const data = {
   links: [
     {
       text: "Email",
-      url: "mailto:jdserez@uwaterloo.ca",
+      url: "mailto:serez.james@gmail.com",
       newTab: false
     },
     {
@@ -27,7 +27,7 @@ const data = {
     {
       title: "Vysio",
       label: "Project",
-      description: "this is the description",
+      description: "Reimagining physio rehabilitation through enhanced tracking and comprehensive analytics. More info arriving by Jan 21st!",
       year: "2021",
       imagePath: "vysio_dash.png",
       route: "/vysio/"
@@ -35,7 +35,7 @@ const data = {
     {
       title: "Manulife Developer Site",
       label: "Work",
-      description: "this is the description",
+      description: "I drove product strategy, design and refinement of Manulife’s first engineering outreach web platform. More info arriving by Jan 21st!",
       year: "2020",
       imagePath: "manulife.png",
       route: "/manulife/"
@@ -43,7 +43,7 @@ const data = {
     {
       title: "Purolator Support Desk",
       label: "Work",
-      description: "this is the description",
+      description: "I was the lead designer and developer on a full UI/UX restructure of Purolator's Support Desk. More info arriving by Jan 21st!",
       year: "2019",
       imagePath: "purolator.png",
       route: "/purolator/"
@@ -51,7 +51,7 @@ const data = {
     {
       title: "Fingo",
       label: "Project",
-      description: "this is the description",
+      description: "Creating financial literacy through iterative exposure to investment markets and metrics. More info arriving by Jan 21st!",
       year: "2020",
       imagePath: "fingo.png",
       route: "/fingo/"
