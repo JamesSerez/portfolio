@@ -2,7 +2,7 @@ import React from 'react'
 
 const data = {
   title: "Vysio",
-  description: "Reimagining physio rehabilitation through enhanced tracking and comprehensive analytics. More info arriving by Jan 21st!"
+  description: "Reimagining physio rehabilitation through enhanced tracking and comprehensive analytics. Full article arriving on Jan 25th!"
 }
 
 const Vysio = () => {
