@@ -1,6 +1,6 @@
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}'],
-  darkMode: 'media', // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {
@@ -9,7 +9,8 @@ module.exports = {
         'extrabold': ['Poppins', 'sans-serif', 800],
       },
       colors: {
-        primary: "#0055A4"
+        primary: "#0055A4",
+        manulife: "#7ED396"
       },
       spacing: {
         '144': '36rem',
@@ -26,7 +27,7 @@ module.exports = {
   variants: {
     extend: {
       animation: ['hover'],
-      logo: ['dark'],
+      display: ['dark'],
     },
   },
   plugins: [],

@@ -5,7 +5,8 @@ import Section from '../components/Section';
 const data = {
   //imagePath: "logo.png",
   name: "James Serez",
-  logo: 'logo.png',
+  logo_black: 'logo.png',
+  logo_white: 'logo_white.png',
   links: [
     {
       text: "Email",
@@ -25,20 +26,20 @@ const data = {
   ],
   sections: [
     {
-      title: "Vysio",
-      label: "Project",
-      description: "Reimagining physio rehabilitation through enhanced tracking and comprehensive analytics. More info arriving by Jan 21st!",
-      year: "2021",
-      imagePath: "vysio_dash.png",
-      route: "/vysio/"
-    },
-    {
       title: "Manulife Developer Site",
       label: "Work",
       description: "I drove product strategy, design and refinement of Manulife’s first engineering outreach web platform. More info arriving by Jan 21st!",
       year: "2020",
       imagePath: "manulife.png",
       route: "/manulife/"
+    },
+    {
+      title: "Vysio",
+      label: "Project",
+      description: "Reimagining physio rehabilitation through enhanced tracking and comprehensive analytics. More info arriving by Jan 21st!",
+      year: "2021",
+      imagePath: "vysio_dash.png",
+      route: "/vysio/"
     },
     {
       title: "Purolator Support Desk",
@@ -52,7 +53,7 @@ const data = {
       title: "Fingo",
       label: "Project",
       description: "Creating financial literacy through iterative exposure to investment markets and metrics. More info arriving by Jan 21st!",
-      year: "2020",
+      year: "2019",
       imagePath: "fingo.png",
       route: "/fingo/"
     },
@@ -66,7 +67,7 @@ const IndexPage = () => {
     <main class="min-h-screen min-w-screen dark:bg-black">
       <div class="mx-auto pb-20 min-h-screen w-full sm:w-3/4 xl:w-2/3 2xl:w-1/2 pt-10 md:pt-16 lg:pt-28">
       <div class="flex flex-col px-3 md:px-1">
-        <img class="w-6 sm:w-6 md:w-12 xl:w-12 2xl:w-12 pb-1" src={data.logo} />
+        <img class="w-6 sm:w-6 md:w-12 xl:w-12 2xl:w-12 pb-1 dark:hidden" src={data.logo_black} />
         <div class="w-full h-full mb-6 sm:mb-12 md:mb-16 lg:mb-20">
         
           <p class="font-medium text-xl sm:text-lg md:text-lg lg:text-lg dark:text-white">{data.name}</p>
