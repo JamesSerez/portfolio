@@ -3,7 +3,8 @@ import React from 'react'
 const data = {
   title: "Fingo",
   description: "A passion project between myself and 3 friends, “fingo” takes an iterative approach to teaching the basics of stock markets. This project was my introduction to Figma and a chance to explore the idea of gamification.",
-  banner: "../fingo_banner.png"
+  banner: "../fingo_banner.png",
+  resume:"../Resume.pdf"
 }
 
 const Fingo = () => {
@@ -11,10 +12,10 @@ const Fingo = () => {
   return (
     <main class="min-h-screen min-w-screen dark:bg-black">
       <div class="h-14 bg-white w-screen flex flex-row justify-between items-center"> 
-        <a href="/" class="font-bold pl-16 flex flex-row items-center">
+        <a href="/" class="font-semibold pl-16 flex flex-row items-center">
           Home
         </a>
-        <a href="/" class="font-bold pr-16">Resume</a>
+        <a href={data.resume} target="_blank" class="font-semibold pr-16">Resume</a>
       </div>
       <img class="w-screen" src={data.banner} />
       <div class="mx-auto w-full sm:w-3/4 lg:w-2/3 xl:w-1/2 pt-10 md:pt-16 lg:pt-18">
