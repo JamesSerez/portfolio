@@ -119,9 +119,9 @@ const Manulife = () => {
         <p class="text-manulife text-lg pt-4">ANALYZING CURRENT USER INTERACTIONS</p>
         <p class="text-gray-600">I decided to <b>investigate the current flow</b> users would take to apply for an internship at Manulife, given that it’ll be a primary function of our solution. From the flow walkthrough and user interviews completed earlier, myself and the fellow co-op identified 3 key pain points users are facing:</p>
         <div class="py-2 flex flex-row justify-between">
-          <p class="text-gray-600">It takes <b>too long</b> to find relevant job position information online</p>
-          <p class="text-gray-600">There are <b>too many</b> different engineering positions</p>
-          <p class="text-gray-600">There's <b>no information</b> about Manulife Engineering and its culture</p>
+          <div class="text-gray-600 border border-2 rounded-lg m-4 drop-shadow-md p-4">It takes <b>too long</b> to find relevant job position information online</div>
+          <div class="text-gray-600 border border-2 rounded-lg m-4 drop-shadow-md p-4">There are <b>too many</b> different engineering positions</div>
+          <div class="text-gray-600 border border-2 rounded-lg m-4 drop-shadow-md p-4">There's <b>no information</b> about Manulife Engineering and its culture</div>
         </div>
         <p class="text-gray-600">With all we’ve learned so far, we chose to create 3 personas that represent a spectrum of users we’ll be designing our solution for. Here is one of the three personas, modelling an eager first year student who is wanting a position that’ll broaden his range of technical skills:</p>
         <div class="py-2 flex justify-center">
@@ -167,10 +167,10 @@ const Manulife = () => {
         <p class="text-gray-600">We created a test plan with open ended questions and conducted 8 tests on our designs. Users were presented with two versions of each page (A and B), such as the two featured above, and asked to provide feedback on all aspects.</p>
         <p class="text-gray-600">Here's a look at some of the <b>key findings:</b></p>
         <div class="grid grid-cols-2 gap-4">
-          <div class="text-gray-600">4/8 users couldn’t identify what differentiates Manulife’s co-op experience from other companies</div>
-          <div class="text-gray-600">6/8 users looked for information about projects and tools under the FAQ section</div>
-          <div class="text-gray-600">8/8 users found the job-opening table’s filtering options intuitive and helpful</div>
-          <div class="text-gray-600">5/8 users appreciated the content about co-op before seeing the job openings</div>
+          <div class="text-gray-600 border border-2 rounded-lg m-1 drop-shadow-md p-4"><b>4/8</b> users <b>couldn’t identify</b> what differentiates Manulife’s co-op experience from other companies</div>
+          <div class="text-gray-600 border border-2 rounded-lg m-1 drop-shadow-md p-4"><b>6/8</b> users looked for information about projects and tools under the FAQ section</div>
+          <div class="text-gray-600 border border-2 rounded-lg m-1 drop-shadow-md p-4"><b>5/8</b> users appreciated the content about co-op before seeing the job openings</div>
+          <div class="text-gray-600 border border-2 rounded-lg m-1 drop-shadow-md p-4"><b>8/8</b> users found the job-opening table’s filtering options <b>intuitive and helpful</b></div>
         </div>
         <p class="text-gray-600">These findings revealed the need for layout and content changes which we presented to our product owner. We continued to iterate on the wireframes before pushing to high-fidelity design.</p>
         <p class="text-manulife text-lg pt-4">DESIGN GUIDELINES</p>
