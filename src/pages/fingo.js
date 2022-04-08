@@ -13,7 +13,7 @@ const Fingo = () => {
     <main class="min-h-screen min-w-screen dark:bg-black">
       <div class="h-14 bg-white w-screen flex flex-row justify-between items-center"> 
         <a href="/" class="font-semibold pl-16 flex flex-row items-center">
-          Home
+        &lt; Home
         </a>
         <a href={data.resume} target="_blank" class="font-semibold pr-16">Resume</a>
       </div>

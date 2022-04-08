@@ -17,7 +17,8 @@ const data = {
   about: "../manulife_about.png",
   interns: "../manulife_interns.png",
   events: "../manulife_events.png",
-  blogs: "../manulife_blogs.png"
+  blogs: "../manulife_blogs.png",
+  logo_black: '../logo.png'
 }
 
 const Manulife = () => {
@@ -26,8 +27,9 @@ const Manulife = () => {
     <main class="min-h-screen min-w-screen dark:bg-black">
       <div class="h-14 bg-white w-screen flex flex-row justify-between items-center"> 
         <a href="/" class="font-semibold pl-16 flex flex-row items-center">
-          Home
+        &lt; Home
         </a>
+        <img class="h-9" src={data.logo_black} />
         <a href={data.resume} target="_blank" class="font-semibold pr-16">Resume</a>
       </div>
       <img class="w-screen" src={data.banner} />
