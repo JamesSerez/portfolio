@@ -10,7 +10,8 @@ module.exports = {
       },
       colors: {
         primary: "#0055A4",
-        manulife: "#7ED396"
+        manulife: "#7ED396",
+        vysio: "#F5BB57"
       },
       spacing: {
         '144': '36rem',
@@ -30,5 +31,7 @@ module.exports = {
       display: ['dark'],
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }

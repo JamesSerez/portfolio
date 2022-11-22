@@ -64,10 +64,11 @@ const data = {
 // <div class="logo-logo-black dark:logo-logo-white w-6 sm:w-6 md:w-12 xl:w-12 2xl:w-12 pb-1" />
 const IndexPage = () => {
   return (
-    <main class="min-h-screen min-w-screen dark:bg-black">
+    <main class="min-h-screen min-w-screen dark:bg-gray-800">
       <div class="mx-auto pb-20 min-h-screen w-full sm:w-3/4 xl:w-2/3 2xl:w-1/2 pt-10 md:pt-16 lg:pt-28">
       <div class="flex flex-col px-3 md:px-1">
         <img class="w-6 sm:w-6 md:w-12 xl:w-12 2xl:w-12 pb-1 dark:hidden" src={data.logo_black} />
+        <img class="w-6 sm:w-6 md:w-12 xl:w-12 2xl:w-12 pb-1 hidden dark:block" src={data.logo_white} />
         <div class="w-full h-full mb-6 sm:mb-12 md:mb-16 lg:mb-20">
         
           <p class="font-medium text-xl sm:text-lg md:text-lg lg:text-lg dark:text-white">{data.name}</p>

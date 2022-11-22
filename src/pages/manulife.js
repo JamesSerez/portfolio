@@ -24,7 +24,7 @@ const data = {
 const Manulife = () => {
 
   return (
-    <main class="min-h-screen min-w-screen dark:bg-black">
+    <main class="min-h-screen min-w-screen dark:bg-gray-800">
       <div class="h-14 bg-white w-screen flex flex-row justify-between items-center"> 
         <a href="/" class="font-semibold pl-16 flex flex-row items-center">
         &lt; Home
@@ -85,12 +85,12 @@ const Manulife = () => {
           <p class="font-semibold text-2xl">01.</p>
           <p class="text-2xl pl-2">Understand the problem space</p>
         </div>
-        <p class="text-manulife text-lg pt-4">BACKGROUND</p>
+        <p class="text-manulife text-lg font-semibold pt-4">BACKGROUND</p>
         <p class="text-gray-600 font-semibold">Problem</p>
         <p class="text-gray-600 pb-2">Post-secondary students avoid applying for Manulife’s internship/co-op program and full-time positions due to the image they have of the ‘old’ Manulife.</p>
         <p class="text-gray-600 font-semibold">Goal</p>
         <p class="text-gray-600">The site should provide the necessary information about the technology and culture that exists in the Engineering departments at Manulife. This will be done with the hopes of having a more positive influence on potential co-op studnets or new grads who are deciding whether Manulife will be the next stop in their careers.</p>
-        <p class="text-manulife text-lg pt-4">STAKEHOLDER OBJECTIVES</p>
+        <p class="text-manulife text-lg font-semibold pt-4">STAKEHOLDER OBJECTIVES</p>
         <div class="flex flex-row">
             <p class="text-gray-600 text-3xl">1.</p>
             <p class="text-gray-600 pl-7">Solution must attract new and young talent by revealing how Manulife is keeping up with technology trends.</p>
@@ -103,7 +103,7 @@ const Manulife = () => {
             <p class="text-gray-600 text-3xl">3.</p>
             <p class="text-gray-600 pl-5">Solution should display content in a way that is easy to understand at a glance. We wish to minimize the amount of page jumping users must perform to get the information they came for.</p>
           </div>
-          <p class="text-manulife text-lg pt-4">PRIMARY RESEARCH</p>
+          <p class="text-manulife text-lg font-semibold pt-4">PRIMARY RESEARCH</p>
           <p class="text-gray-600">When I arrived at Manulife, the problem I’d be working to solve was already defined for me by the product owner and some AVPs. My first goal was to understand the problem space better and validate it however I could.</p>
           <p class="text-gray-600">We generated and sent a survey out to 38 designers and developers of various skill levels <b>to better understand who we are designing for</b>. We also conducted 5 in-person interviews to gain further insight into the current perspective our target users have of tech jobs at financial companies. Here’s a summary that we presented to stakeholders:</p>
       </div>
@@ -118,7 +118,7 @@ const Manulife = () => {
         <p class="text-gray-600">I was able to pinpoint the top 3 reasons why users don’t apply to engineering positions at companies in the financial industry:</p>
         <p class="text-gray-600 whitespace-pre pl-10">{'1. Lack of innovation/inflexible\n2. Boring\n3. Corporate Environment'}</p>
         <p class="text-gray-600">These will be helpful in identifying where we can stand out in the industry with how we communicate to our users.</p>
-        <p class="text-manulife text-lg pt-4">ANALYZING CURRENT USER INTERACTIONS</p>
+        <p class="text-manulife text-lg font-semibold pt-4">ANALYZING CURRENT USER INTERACTIONS</p>
         <p class="text-gray-600">I decided to <b>investigate the current flow</b> users would take to apply for an internship at Manulife, given that it’ll be a primary function of our solution. From the flow walkthrough and user interviews completed earlier, myself and the fellow co-op identified 3 key pain points users are facing:</p>
         <div class="py-2 flex flex-row justify-between">
           <div class="text-gray-600 border border-2 rounded-lg m-4 drop-shadow-md p-4">It takes <b>too long</b> to find relevant job position information online</div>
@@ -129,7 +129,7 @@ const Manulife = () => {
         <div class="py-2 flex justify-center">
           <img class="w-3/4" src={data.persona} />
         </div>
-        <p class="text-manulife text-lg pt-4">COMPETITIVE ANALYSIS</p>
+        <p class="text-manulife  font-semibold pt-4">COMPETITIVE ANALYSIS</p>
         <p class="text-gray-600">Now that we have a greater understanding of our users, time to understand our competitors. How do other companies attract students? What content are companies presenting on their careers pages? What components should we introduce? These were some of the questions we were considering.</p>
       </div>
 
@@ -149,11 +149,11 @@ const Manulife = () => {
           <p class="text-2xl pl-2">Develop a strategy</p>
         </div>
         <p class="text-gray-600">We spent the first few weeks learning about our users and filling out our problem space. With that stage completed, now came the time to strategize a solution. With our knowledge gained from user interviews and competitive research, we met with the product owner, a Marketing Officer and other Manulife employees to brainstorm the content for the site.</p>
-        <p class="text-manulife text-lg pt-4">SITE MAP</p>
+        <p class="text-manulife text-lg font-semibold pt-4">SITE MAP</p>
         <p class="text-gray-600">Considering what users said, what stood out to us most with competitors, and what Manulife is requiring for the site, we developed the following site map:</p>
         <img class="w-full py-2" src={data.map} />
         <p class="text-gray-600">To help us stay aligned with stakeholders thorughout the design process, I set up weekly check-in meetings and introduced Agile concepts such as sprints, sprint planning and stand-ups.</p>
-        <p class="text-manulife text-lg pt-4">USER FLOWS</p>
+        <p class="text-manulife text-lg font-semibold pt-4">USER FLOWS</p>
         <p class="text-gray-600">We created user flows for some of the interactions we expect on our site. These were developed to help shape the designs we’ll create in the next stage of the process. Here’s an example of one of the flows we made, provided by my fellow design co-op:</p>
         <img class="w-full py-2" src={data.flows} />
       </div>
@@ -163,7 +163,7 @@ const Manulife = () => {
           <p class="font-semibold text-2xl">03.</p>
           <p class="text-2xl pl-2">Design a solution</p>
         </div>
-        <p class="text-manulife text-lg pt-4">WIREFRAMING AND A/B TESTING</p>
+        <p class="text-manulife text-lg font-semibold pt-4">WIREFRAMING AND A/B TESTING</p>
         <p class="text-gray-600">I used Axure RP to create low-fidelity wireframes of the different pages that make up the solution. Low-fidelity mockups let us test the layout and flow of our site and redesign accordingly before investing too much design effort.</p>
         <img class="w-full py-2" src={data.wireframe} />
         <p class="text-gray-600">We created a test plan with open ended questions and conducted 8 tests on our designs. Users were presented with two versions of each page (A and B), such as the two featured above, and asked to provide feedback on all aspects.</p>
@@ -175,13 +175,13 @@ const Manulife = () => {
           <div class="text-gray-600 border border-2 rounded-lg m-1 drop-shadow-md p-4"><b>8/8</b> users found the job-opening table’s filtering options <b>intuitive and helpful</b></div>
         </div>
         <p class="text-gray-600">These findings revealed the need for layout and content changes which we presented to our product owner. We continued to iterate on the wireframes before pushing to high-fidelity design.</p>
-        <p class="text-manulife text-lg pt-4">DESIGN GUIDELINES</p>
+        <p class="text-manulife text-lg font-semibold pt-4">DESIGN GUIDELINES</p>
         <p class="text-gray-600">Using Manulife Canada’s design system, we created a style guide for the website to ensure that all visual design remains consistent across the platform.</p>
         <p class="text-gray-600 font-semibold pt-2">Colours</p>
         <img class="w-full py-2" src={data.colours} />
         <p class="text-gray-600 font-semibold pt-2">Typography</p>
         <img class="w-full py-2" src={data.typography} />
-        <p class="text-manulife text-lg pt-8">FINAL SOLUTION</p>
+        <p class="text-manulife text-lg font-semibold pt-8">FINAL SOLUTION</p>
         <p class="text-gray-600">Using Sketch, we began to developing high-fidelity versions of the 5 unique pages within the platform. As we added to and modified each page, we continued to meet with stakeholders to realign and ensure we were on target with our designs.</p>
         <p class="text-gray-600 font-semibold pt-4">Landing</p>
         <p class="text-gray-600">We promote metrics to advertise the internship program at Manulife then lead directly into quotes bragging about the experience’s users could have. The coloured, offset squares were inspired by competitive analysis into modern tech companies like Shopify.</p>
