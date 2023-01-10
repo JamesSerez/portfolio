@@ -5,7 +5,7 @@ const Section = ({ data }) => {
   const { title, label, description, year, imagePath, route } = data;
 
   return (
-    <Link to={route} class="flex flex-row justify-between pt-2 md:pt-4 lg:pt-6 dark:bg-gray-800 dark:text-white hover:text-gray-400 group">
+    <Link to={route} class="flex flex-row justify-between pt-2 md:pt-4 lg:pt-6 dark:bg-dark dark:text-white hover:text-gray-400 group">
       <div class="flex flex-col max-w-48">
         <h1 class="font-semibold text-lg sm:text-xl lg:text-3xl my-2 w-64 xl:pb-4 lg:pb-4 md:pb-1 sm:pb-1">{title}</h1>
         <div class="border border-gray-300 border-current colo w-16 md:w-20 lg:w-10"></div>

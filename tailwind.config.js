@@ -11,7 +11,9 @@ module.exports = {
       colors: {
         primary: "#0055A4",
         manulife: "#7ED396",
-        vysio: "#F5BB57"
+        vysio: "#F5BB57",
+        dark: "#27272a",
+        dark_diff: "#3f3f46"
       },
       spacing: {
         '144': '36rem',

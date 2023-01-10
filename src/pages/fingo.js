@@ -4,7 +4,8 @@ const data = {
   title: "Fingo",
   description: "A passion project between myself and 3 friends, “fingo” takes an iterative approach to teaching the basics of stock markets. This project was my introduction to Figma and a chance to explore the idea of gamification.",
   banner: "../fingo_banner.png",
-  resume:"../Resume.pdf"
+  resume:"../Resume.pdf",
+  logo_white:"../logo_white.png"
 }
 
 const Fingo = () => {
@@ -15,6 +16,8 @@ const Fingo = () => {
         <a href="/" class="font-semibold pl-16 flex flex-row items-center">
         &lt; Home
         </a>
+        <img class="h-9 dark:hidden" src={data.logo_black} />
+        <img class="h-9 hidden dark:block" src={data.logo_white} />
         <a href={data.resume} target="_blank" class="font-semibold pr-16">Resume</a>
       </div>
       <img class="w-screen" src={data.banner} />
