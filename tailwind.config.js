@@ -13,7 +13,10 @@ module.exports = {
         manulife: "#7ED396",
         vysio: "#F5BB57",
         dark: "#27272a",
-        dark_diff: "#3f3f46"
+        dark_diff: "#3f3f46",
+        puro_blue: "#001996",
+        puro_red: "#F00000",
+        purolator: "#AC99D5"
       },
       spacing: {
         '144': '36rem',
