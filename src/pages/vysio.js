@@ -3,7 +3,7 @@ import React from 'react'
 const data = {
   title: "Vysio",
   description: "Vysio is a product that sets out to reimagine physiotherapy rehabilitation through enhanced tracking, new communication pathways and comprehensive analytics.",
-  banner: "../vysio_banner.png",
+  banner: "../vysio/vysio_banner.png",
   resume: "../Resume.pdf",
   poster: "../vysio/Vysio Poster.png",
   dashboard: "../vysio/dashboard.gif",
@@ -14,7 +14,10 @@ const data = {
   mobile_session: "../vysio/session.png",
   mobile_notes: "../vysio/notes.png",
   mobile_summary: "../vysio/summary.png",
-  logo_white: '../logo_white.png'
+  logo_white: '../logo_white.png',
+  brainstorming:"../vysio/brainstorming.png",
+  user_flow:"../vysio/user_flow.png",
+  sketches:"../vysio/sketches.png"
 }
 
 const Vysio = () => {
@@ -32,7 +35,12 @@ const Vysio = () => {
       <img class="w-screen" src={data.banner} />
       <div class="mx-auto w-full sm:w-3/4 lg:w-2/3 xl:w-1/2 pt-10 md:pt-16 lg:pt-18">
         <div class="flex flex-col px-3 md:px-1">
-          <p class="font-semibold dark:text-white text-4xl pb-2">{data.title}</p>
+          <div class="flex flex-row justify-between pb-6">
+            <p class="font-semibold dark:text-white text-4xl pb-2">{data.title}</p>
+            <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded">
+              <a href="https://www.figma.com/proto/DHA6gO4QqWUZcUDASH6nsg/Vysio-Prototype?node-id=1%3A845&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A845" target="_blank">Try Prototype</a>
+            </button>
+          </div>
           <p class="text-gray-600 dark:text-gray-300">{data.description}</p>
         </div>
       </div>
@@ -62,7 +70,7 @@ const Vysio = () => {
       <div class="w-full bg-gray-100 dark:bg-dark_diff">
         <div class="mx-auto w-full sm:w-3/4 lg:w-2/3 xl:w-1/2 py-2 md:py-4 lg:py-8 space-y-3">
           <p class="font-semibold dark:text-white text-4xl pb-2">Project Overview</p>
-          <p class="text-gray-600 dark:text-white pb-2">Check out the poster I created to summarize our project, followed by a video I wrote, shot and edited!</p>
+          <p class="text-gray-600 dark:text-white pb-2">Check out the informational poster I created to summarize our project, followed by a video I wrote, shot and edited!</p>
           <img class="pb-6" src={data.poster}/>
           <div class="aspect-w-16 aspect-h-9">
             <iframe src="https://www.youtube.com/embed/GaZqT9mZeto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -134,9 +142,37 @@ const Vysio = () => {
         </div>
       </div>
 
-      <div class="w-full bg-gray-100 flex justify-center dark:bg-dark_diff">
-        <div class="pt-6 pb-6">
-          <p class="text-2xl text-gray-600 dark:text-white">🚧 Article under construction. Check back soon! 🛠</p>
+      
+
+      <div class="w-full bg-gray-100 dark:bg-dark_diff">
+        <div class="mx-auto w-full sm:w-3/4 lg:w-2/3 xl:w-1/2 py-2 md:py-4 lg:py-8 space-y-3">
+          <p class="font-semibold dark:text-white text-4xl pb-2">Design Process</p>
+          <p class="text-gray-600 dark:text-white">Let's take a quick look at some of the design processes and activities I performed for this project. Given that I was the sole designer and product owner, I had to initiate and lead each stage of the process. I pulled inspiration from course work, previous co-ops and online resources to determine our workflow.</p>
+          <p class="font-semibold text-gray-500 dark:text-white text-2xl pt-4">Design Activities</p>
+          <p class="font-semibold text-vysio text-lg">BRAINSTORMING</p>          
+          <p class="text-gray-600 dark:text-gray-300"><b>Purpose:</b> to explore multiple design option and gain a high level view of the product we hope to produce. This is a key step in creating the architecture of a product.</p>
+          <p class="text-gray-600 dark:text-gray-300"><b>Takeaway:</b> the app will have be both web and mobile components. General content for different platforms explored and outlined.</p>
+          <p class="text-gray-600 dark:text-gray-300">Below is a screenshot of the brainstorming my team completed on FigJam. Click to see the image full size.</p>
+          <a href={data.brainstorming} target="_blank"><img class="pt-4 transition duration-500 ease-in-out transform hover:scale-105" src={data.brainstorming}></img></a>
+        </div>
+      </div>
+
+      <div class="mx-auto w-full sm:w-3/4 lg:w-2/3 xl:w-1/2 py-2 md:py-4 lg:py-8 space-y-3 bg-white dark:bg-dark">
+        <p class="font-semibold text-vysio text-lg">USER FLOWS</p>          
+        <p class="text-gray-600 dark:text-gray-300"><b>Purpose:</b> to design an intuitive product that presents users with the correct information at the right time and minimizes steps to complete tasks.</p>
+        <p class="text-gray-600 dark:text-gray-300"><b>Takeaway:</b> helped us feel out the structure of our product further. Plenty of design choices were decided on:</p>
+        <ul class="pl-8 list-disc text-gray-600 dark:text-gray-300"><li>dedicated dashboards per user</li><li>either Patients tab or Patient search bar to minimize work for web user</li><li>use notifications to direct physiotherapists</li><li>session view for physiotherapists to review specific sessions</li><li>and many more!</li></ul>
+        <p class="text-gray-600 dark:text-gray-300">Below is a snippet of some of the user flows I created. I built them in Figma then had my team review them. Click to see the image full size.</p>
+        <a href={data.user_flow} target="_blank"><img class="pt-4 transition duration-500 ease-in-out transform hover:scale-105" src={data.user_flow}></img></a>
+      </div>
+
+      <div class="w-full bg-gray-100 dark:bg-dark_diff">
+        <div class="mx-auto w-full sm:w-3/4 lg:w-2/3 xl:w-1/2 py-2 md:py-4 lg:py-8 space-y-3">
+          <p class="font-semibold text-vysio text-lg">UI SKETCHES</p>          
+          <p class="text-gray-600 dark:text-gray-300"><b>Purpose:</b> rapid idea exploration. Now that we know our general application architecture, time to start brainstorming feature design. We challenged ourselves to do 3 designs per feature idea within 10 minutes to make sure we explored our options.</p>
+          <p class="text-gray-600 dark:text-gray-300"><b>Takeaway:</b> general UI design for select features.</p>
+          <p class="text-gray-600 dark:text-gray-300">Below is a look at some of my sketches for two different feature ideas. We explored 6 different features in total. Click to see the image full size.</p>
+          <a href={data.sketches} target="_blank"><img class="pt-4 transition duration-500 ease-in-out transform hover:scale-105" src={data.sketches}></img></a>
         </div>
       </div>
     </main>

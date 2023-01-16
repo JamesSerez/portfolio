@@ -24,7 +24,10 @@ const data = {
   real_home:"../purolator/real_home.png",
   real_mobile:"../purolator/real_mobile.png",
   search:"../purolator/search.png",
-  table:"../purolator/table.png"
+  table:"../purolator/table.png",
+  timeline_dark:"../purolator/timeline_dark.svg",
+  timeline_light:"../purolator/timeline_light.svg",
+  wireframe:"../purolator/wireframe.png"
 }
 
 const Purolator = () => {
@@ -67,6 +70,11 @@ const Purolator = () => {
             <p class="text-gray-600 dark:text-gray-300">May 2019 - July 2019</p>
           </div>
         </div>
+      </div>
+      <div class="mx-auto w-full sm:w-3/4 lg:w-2/3 xl:w-1/2 py-2 md:py-4 lg:py-8 space-y-3 bg-white dark:bg-dark">
+        <p class="font-semibold dark:text-white">Timeline</p>
+        <img class="w-full dark:hidden" src={data.timeline_light} />
+        <img class="w-full hidden dark:block" src={data.timeline_dark} />
       </div>
 
       <div class="w-full bg-gray-100 dark:bg-dark_diff">
@@ -115,7 +123,7 @@ const Purolator = () => {
       </div>
 
       <div class="w-full bg-gray-100 dark:bg-dark_diff">
-        <div class="mx-auto w-full sm:w-3/4 lg:w-2/3 xl:w-1/2 py-2 md:py-4 lg:py-8 space-y-3 bg-white dark:bg-dark_diff">
+        <div class="mx-auto w-full sm:w-3/4 lg:w-2/3 xl:w-1/2 py-2 md:py-4 lg:py-8 space-y-3 bg-gray-100 dark:bg-dark_diff">
           <div class="flex flex row pt-2">
             <p class="font-semibold text-2xl dark:text-white">02.</p>
             <p class="text-2xl pl-2 dark:text-white">Evaluate the current solution</p>
@@ -144,30 +152,40 @@ const Purolator = () => {
         <p class="text-gray-600 dark:text-gray-300">By creating these 9 general categories, I hoped that I could streamline the user’s experience and ease the problem of having to decide between too many options.</p>
         <p class="text-purolator text-lg font-semibold pt-4">TOOLKIT SELECTION</p>
         <div class="py-2 flex flex-row justify-between">
-          <div class="text-gray-600 w-1/2 border border-2 rounded-lg m-4 drop-shadow-md p-4 dark:text-gray-300"><p class="text-lg pb-2"><b>Figma</b></p><p>It’s been my primary platform for design work in the past, it’s highly accessible, and it allows for easy collaboration.</p></div>
-          <div class="text-gray-600 w-1/2 border border-2 rounded-lg m-4 drop-shadow-md p-4 dark:text-gray-300"><p class="text-lg pb-2"><b>Bootstrap Responsive Framework</b></p><p>I needed something simple, straightforward and responsive to build my prototype. I also wanted to ensure both Web and Mobile needs would be met.</p></div>
+          <div class="text-gray-600 w-1/2 rounded-lg m-4 drop-shadow-md p-4 dark:text-gray-300"><p class="text-lg pb-2"><b>Figma</b></p><p>It’s been my primary platform for design work in the past, it’s highly accessible, and it allows for easy collaboration.</p></div>
+          <div class="text-gray-600 w-1/2 rounded-lg m-4 drop-shadow-md p-4 dark:text-gray-300"><p class="text-lg pb-2"><b>Bootstrap Responsive Framework</b></p><p>I needed something simple, straightforward and responsive to build my prototype. I also wanted to ensure both Web and Mobile needs would be met.</p></div>
         </div>
         <p class="text-purolator text-lg font-semibold pt-4">COMPETITIVE RESEARCH</p>
         <p class="text-gray-600 pb-2 dark:text-gray-300">Always a necessary step in my design process! Sometimes you don’t need to invent the wheel, you just need to build the best wheel. I explored a few different platforms, one of which was Interac’s website. I loved their expand-condense method to relay information:</p>
-        <img class="w-full py-2" src={data.interac}/>
+        <div class="flex justify-center">
+          <img class="w-2/3 py-2" src={data.interac}/>
+        </div>
         <p class="text-purolator text-lg font-semibold pt-4">LOW-FIDELITY MOCKUPS</p>
         <p class="text-gray-600 pb-2 dark:text-gray-300">To allow for quick iteration and exploration, I started building some low-fidelity mockups in Figma. I would frequently present my mockups to developers and product owners within the company to get their opinion. As I continued to iterate, I landed on these designs:</p>
-        <img class="w-full py-2" src={data.lofi_home}/>
+        <div class="flex justify-center">
+          <img class="w-5/6 py-2" src={data.lofi_home}/>
+        </div>
         <p class="text-gray-600 dark:text-gray-300"><b>Cards:</b> Competitive research taught me that cards are trendy and effective. Icons, when used correctly, are an effective way for users to quickly identify what each category entails.</p>
         <p class="text-gray-600 dark:text-gray-300"><b>Search Bar:</b> I also included a search bar at the top since one of the most frequent pieces of feedback from user testing was that a support desk <i>needs</i> a search bar.</p>
-        <img class="w-full py-2" src={data.lofi_article}/>
+        <div class="flex justify-center">
+          <img class="w-5/6 py-2" src={data.lofi_article}/>
+        </div>
         <p class="text-gray-600 dark:text-gray-300"><b>Font size:</b> Larger text! The previous solution had small, bold text that very poor visibility.</p>
         <p class="text-gray-600 dark:text-gray-300"><b>Expandable articles:</b> Now that multiple articles are contained in each category, I knew the users would want an efficient way to flip between them. Each articles is easily expanded and condensed based on the needs of the user.</p>
-        <img class="w-full py-2" src={data.lofi_mobile}/>
+        <div class="flex justify-center">
+          <img class="py-2" src={data.lofi_mobile}/>
+        </div>
         <p class="text-gray-600 dark:text-gray-300"><b>Mobile build:</b> For quick info, users often turn to their phones. Our support desk should be mobile friendly so that users can access information as fast as possible.</p>
         <p class="text-purolator text-lg font-semibold pt-4">MEDUIM-FIDELITY COLOURING TEST</p>
-        <p class="text-gray-600 pb-2 dark:text-gray-300">I decided it wasn’t worth putting hours and hours into developing high fidelity mockups of my prototype since I knew my main goal was proof of concept. If my prototype were approved, then would begin the fine-tuning to match Purolator’s new feel.</p>
+        <p class="text-gray-600 pb-2 dark:text-gray-300">Since my main goal was to create a proof of concept, it didn't make sense to put hours and hours into developing high fidelity mockups of my prototype. If my prototype were approved, then would begin the fine-tuning to match Purolator’s new feel.</p>
         <p class="text-gray-600 pb-2 dark:text-gray-300">However, I did want to get a clear idea of how I would style my prototype. I whipped up some medium fidelity designs to test colours, shadowing and iconography. Here’s a sample:</p>
-        <img class="w-full py-2" src={data.mefi_home}/>
+        <div class="flex justify-center">
+          <img class="w-5/6 py-2" src={data.mefi_home}/>
+        </div>
       </div>
 
       <div class="w-full bg-gray-100 dark:bg-dark_diff">
-        <div class="mx-auto w-full sm:w-3/4 lg:w-2/3 xl:w-1/2 py-2 md:py-4 lg:py-8 space-y-3 bg-white dark:bg-dark_diff">
+        <div class="mx-auto w-full sm:w-3/4 lg:w-2/3 xl:w-1/2 py-2 md:py-4 lg:py-8 space-y-3 bg-gray-100 dark:bg-dark_diff">
           <div class="flex flex row pt-2">
             <p class="font-semibold text-2xl dark:text-white">04.</p>
             <p class="text-2xl pl-2 dark:text-white">Build the prototype</p>
@@ -202,10 +220,14 @@ const Purolator = () => {
           <img class="w-full py-2" src={data.search}/>
           <p class="text-purolator text-lg font-semibold pt-4">HOME PAGE</p>
           <p class="text-gray-600 pb-2 dark:text-gray-300">Now with cards, large icons and categories, the home page has been revamped to ease the decision process for the user. What was once 30+ tiny text titles is now 9, large, easily distinguishable options. I’ll spare sharing the code in this article, but here’s an image of the final build:</p>
-          <img class="w-full py-2" src={data.final_home}/>
+          <div class="flex justify-center">
+            <img class="w-5/6 py-2" src={data.final_home}/>
+          </div>
           <p class="text-purolator text-lg font-semibold pt-4">ARTICLES</p>
           <p class="text-gray-600 pb-2 dark:text-gray-300">Within the category, a user can click to expand individual articles. Pulling from competitive research, this layout is efficient and intuitive. I added the option for quick navigation between different categories in the navbar to reduce clicks from the user. Here’s what I created:</p>
-          <img class="w-full py-2" src={data.final_article}/>
+          <div class="flex justify-center">
+            <img class="w-5/6 py-2" src={data.final_article}/>
+          </div>
           <p class="text-purolator text-lg font-semibold pt-4">MOBILE</p>
           <p class="text-gray-600 pb-2 dark:text-gray-300">Bootstrap’s responsive nature was helpful, but it still took some fine-tuning to finish up the mobile builds. Industry standard UI elements were used, such as the hamburger menu in navbar.</p>
           <img class="w-full py-2" src={data.final_mobile}/>
@@ -221,14 +243,20 @@ const Purolator = () => {
         </div>
         <p class="text-gray-600 pb-2 dark:text-gray-300">The prototype was approved by the director of product. I handed off my prototype at the end of my co-op term. A few months later, I checked back on Purolator’s live site and was pleasantly surprised to see their support section was modeled off my prototype.</p>
         <p class="text-purolator text-lg font-semibold pt-4">HOME PAGE</p>
-        <img class="w-full py-2" src={data.real_home}/>
+        <div class="flex justify-center">
+          <img class="w-5/6 py-2" src={data.real_home}/>
+        </div>
         <p class="text-gray-600 pb-2 dark:text-gray-300">Observe the large cards, Purolator Blue text, and a few select categories.</p>
         <p class="text-purolator text-lg font-semibold pt-4">ARTICLES</p>
-        <img class="w-full py-2" src={data.real_article}/>
+        <div class="flex justify-center">
+          <img class="w-5/6 py-2" src={data.real_article}/>
+        </div>
         <p class="text-gray-600 pb-2 dark:text-gray-300">Observe the stacked articles and click-to-expand functionality with plus/minus icons.</p>
         <p class="text-purolator text-lg font-semibold pt-4">MOBILE</p>
-        <img class="w-full py-2" src={data.real_mobile}/>
-        <p class="text-gray-600 pb-2 dark:text-gray-300">Observe the responsive design modeled directly off of my prototype.</p>
+        <div class="flex justify-center">
+          <img class="w-5/6 py-2" src={data.real_mobile}/>
+        </div>
+        <p class="text-gray-600 pb-2 dark:text-gray-300">Myself and my team were very pleased with the prototype I developed. This task was the perfect chance to stretch myself not just in terms of problem solving, but problem <i>identifying</i> as well. Feel free to connect with me if you have any questions about my work!</p>
       </div>
     </main>
   )
