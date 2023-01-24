@@ -16,7 +16,9 @@ module.exports = {
         dark_diff: "#3f3f46",
         puro_blue: "#001996",
         puro_red: "#F00000",
-        purolator: "#AC99D5"
+        purolator: "#AC99D5",
+        footer: "#F2F2F2",
+        fingo: "#A2D2FF"
       },
       spacing: {
         '144': '36rem',
