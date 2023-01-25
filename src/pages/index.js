@@ -26,20 +26,20 @@ const data = {
   ],
   sections: [
     {
-      title: "Manulife Developer Site",
-      label: "Work",
-      description: "I drove product strategy, design and refinement of Manulife’s first engineering outreach web platform. More info arriving by Jan 21st!",
-      year: "2020",
-      imagePath: "manulife.png",
-      route: "/manulife/"
-    },
-    {
       title: "Vysio",
       label: "Project",
       description: "Reimagining physio rehabilitation through enhanced tracking and comprehensive analytics. More info arriving by Jan 21st!",
       year: "2021",
       imagePath: "vysio_dash.png",
       route: "/vysio/"
+    },
+    {
+      title: "Manulife Developer Site",
+      label: "Work",
+      description: "I drove product strategy, design and refinement of Manulife’s first engineering outreach web platform. More info arriving by Jan 21st!",
+      year: "2020",
+      imagePath: "manulife.png",
+      route: "/manulife/"
     },
     {
       title: "Purolator Support Desk",
@@ -49,14 +49,14 @@ const data = {
       imagePath: "purolator.png",
       route: "/purolator/"
     },
-    {
-      title: "Fingo",
-      label: "Project",
-      description: "Creating financial literacy through iterative exposure to investment markets and metrics. More info arriving by Jan 21st!",
-      year: "2019",
-      imagePath: "fingo.png",
-      route: "/fingo/"
-    },
+    //{
+    //title: "Fingo",
+    //label: "Project",
+    //description: "Creating financial literacy through iterative exposure to investment markets and metrics. More info arriving by Jan 21st!",
+    //year: "2019",
+    //imagePath: "fingo.png",
+    //route: "/fingo/"
+    //},
   ]
 }
 

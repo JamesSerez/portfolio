@@ -5,7 +5,8 @@ const data = {
   description: "A passion project between myself and 3 friends, “fingo” takes an iterative approach to teaching the basics of stock markets. This project was my introduction to Figma and a chance to explore the idea of gamification.",
   banner: "../fingo_banner.png",
   resume:"../Resume.pdf",
-  logo_white:"../logo_white.png"
+  logo_white:"../logo_white.png",
+  logo_black: "../logo_black.png"
 }
 
 const Fingo = () => {

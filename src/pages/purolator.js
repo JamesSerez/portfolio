@@ -6,6 +6,7 @@ const data = {
   banner: "../purolator_banner.png",
   resume: "../Resume.pdf",
   logo_white:"../logo_white.png",
+  logo_black: "../logo_black.png",
   old:"../purolator/old.png",
   old_article:"../purolator/old_article.png",
   table:"../purolator/table.png",
@@ -50,7 +51,7 @@ const Purolator = () => {
         </div>
       </div>
 
-      <div class="mx-auto w-full sm:w-3/4 lg:w-2/3 xl:w-1/2 py-2 md:py-4 lg:py-8 bg-white dark:bg-dark flex flex-row justify-between">
+      <div class="mx-auto w-full sm:w-3/4 lg:w-2/3 xl:w-1/2 pt-2 md:pt-4 lg:pt-8 bg-white dark:bg-dark flex flex-row justify-between">
         <div class="flex flex-col">
           <p class="font-semibold dark:text-white">Team</p>
           <p class="whitespace-pre text-gray-600 dark:text-gray-100">{'UI/UX Designer (me)\nSoftware Developer (still me)\n2 Supporting Engineers\nVP of Product'}</p>
@@ -71,7 +72,7 @@ const Purolator = () => {
           </div>
         </div>
       </div>
-      <div class="mx-auto w-full sm:w-3/4 lg:w-2/3 xl:w-1/2 py-2 md:py-4 lg:py-8 space-y-3 bg-white dark:bg-dark">
+      <div class="mx-auto w-full sm:w-3/4 lg:w-2/3 xl:w-1/2 py-2 md:py-4 lg:py-8 bg-white dark:bg-dark">
         <p class="font-semibold dark:text-white">Timeline</p>
         <img class="w-full dark:hidden" src={data.timeline_light} />
         <img class="w-full hidden dark:block" src={data.timeline_dark} />

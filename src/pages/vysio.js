@@ -5,7 +5,6 @@ const data = {
   description: "Vysio is a product that sets out to reimagine physiotherapy rehabilitation through enhanced tracking, new communication pathways and comprehensive analytics.",
   banner: "../vysio/vysio_banner.png",
   resume: "../Resume.pdf",
-  poster: "../vysio/Vysio Poster.png",
   dashboard: "../vysio/dashboard.gif",
   plan_creation: "../vysio/plan-creation.gif",
   session_review: "../vysio/session-review.gif",
@@ -15,6 +14,7 @@ const data = {
   mobile_notes: "../vysio/notes.png",
   mobile_summary: "../vysio/summary.png",
   logo_white: '../logo_white.png',
+  logo_black: "../logo_black.png",
   brainstorming:"../vysio/brainstorming.png",
   user_flow:"../vysio/user_flow.png",
   sketches:"../vysio/sketches.png",
@@ -24,7 +24,8 @@ const data = {
   lofi_web:"../vysio/lofi_web.jpg",
   lofi_mobile:"../vysio/lofi_mobile.jpg",
   job_board:"../vysio/job_board.png",
-  meeting_minutes:"../vysio/meeting_minutes.png"
+  meeting_minutes:"../vysio/meeting_minutes.png",
+  poster1:"../vysio/poster.png"
 }
 
 const Vysio = () => {
@@ -75,28 +76,26 @@ const Vysio = () => {
       </div>
 
       <div class="mx-auto w-full sm:w-3/4 lg:w-2/3 xl:w-1/2 pb-2 md:pb-4 lg:pb-8 bg-white dark:bg-dark">
-          <p class="font-semibold text-vysio text-lg pb-2">SHORTCUTS</p>
-          <div class="flex flex-row justify-between">
-            
-              <button class="bg-gray-300 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded drop-shadow-md">
-                <a href="#overview">Project Overview</a>
-              </button>
-            
-              <button class="bg-gray-300 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded drop-shadow-md">
-                <a href="#solution">Solution</a>
-              </button>
-            
-              <button class="bg-gray-300 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded drop-shadow-md">
-                <a href="#process">Design Process</a>
-              </button>
-            
-            
-              <button class="bg-gray-300 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded drop-shadow-md">
-                <a href="">Project Management</a>
-              </button>
-            
-          </div>
+        <p class="font-semibold text-vysio text-lg pb-2">SHORTCUTS</p>
+        <div class="flex flex-row justify-between">
+          
+            <button class="dark:bg-dark_diff bg-gray-100 hover:bg-blue-400 text-gray-600 dark:text-white font-bold py-2 px-4 rounded drop-shadow-md">
+              <a href="#overview">Project Overview</a>
+            </button>
+          
+            <button class="dark:bg-dark_diff bg-gray-100 hover:bg-blue-400 text-gray-600 dark:text-white font-bold py-2 px-4 rounded drop-shadow-md">
+              <a href="#solution">Solution</a>
+            </button>
+          
+            <button class="dark:bg-dark_diff bg-gray-100 hover:bg-blue-400 text-gray-600 dark:text-white font-bold py-2 px-4 rounded drop-shadow-md">
+              <a href="#process">Design Process</a>
+            </button>
+          
+            <button class="dark:bg-dark_diff bg-gray-100 hover:bg-blue-400 text-gray-600 dark:text-white font-bold py-2 px-4 rounded drop-shadow-md">
+              <a href="">Project Management</a>
+            </button>
         </div>
+      </div>
 
       <div class="w-full bg-gray-100 dark:bg-dark_diff" id="overview">
         <div class="mx-auto w-full sm:w-3/4 lg:w-2/3 xl:w-1/2 py-2 md:py-4 lg:py-8 space-y-3">
@@ -106,8 +105,8 @@ const Vysio = () => {
             <p class="w-3/4 border border-2 rounded-lg px-4 pt-4 pb-4 text-center text-gray-600 dark:text-gray-100 pb-2">Vysio seeks to <b>improve data visibility</b> and <b>communication</b> between practitioners and clients, leading to <b>improved client outcomes</b>.</p>
           </div>
           <p class="font-semibold text-vysio text-lg">MEDIA</p>
-          <p class="text-gray-600 dark:text-gray-100 pb-2">Check out the informational poster I created to summarize our project, followed by a video I wrote, shot and edited!</p>
-          <img class="pb-6" src={data.poster}/>
+          <p class="text-gray-600 dark:text-gray-100 pb-2">Check out the informational poster I created to summarize our project (click to enlarge), followed by a video I wrote, shot and edited!</p>
+          <a href={data.poster1} target="_blank"><img class="pt-4 scale-95 transition duration-500 ease-in-out transform hover:scale-100" src={data.poster1}></img></a>
           <div class="aspect-w-16 aspect-h-9">
             <iframe src="https://www.youtube.com/embed/GaZqT9mZeto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
