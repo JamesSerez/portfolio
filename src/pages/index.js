@@ -5,7 +5,7 @@ import Section from '../components/Section';
 const data = {
   //imagePath: "logo.png",
   name: "James Serez",
-  logo_black: 'logo.png',
+  logo_black: 'logo_black.png',
   logo_white: 'logo_white.png',
   links: [
     {
