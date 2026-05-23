@@ -4,7 +4,7 @@ const data = {
   title: "Purolator Support Desk",
   description: "This project is a self-initiated, custom designed and custom built prototype to fuel a full ground-up rebuild of Purolator’s Support Desk system.",
   banner: "../purolator_banner.png",
-  resume: "../Resume.pdf",
+  resume: "../James Serez Resume.pdf",
   logo_white:"../logo_white.png",
   logo_black: "../logo_black.png",
   old:"../purolator/old.png",

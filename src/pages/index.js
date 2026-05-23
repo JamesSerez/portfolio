@@ -20,7 +20,7 @@ const data = {
     },
     {
       text: "Resume",
-      url: "Resume.pdf",
+      url: "James Serez Resume.pdf",
       newTab: true
     },
   ],

@@ -4,7 +4,7 @@ const data = {
   title: "Manulife Developer Site",
   description: "developer.manulife.ca is Manulife's first engineering outreach web platform, aiming to generate awareness about engineering at Manulife. The site was launched in July 2020. I drove product strategy, design, and refinement for this project.",
   banner: "../manulife/manulife_banner.png",
-  resume:"../Resume.pdf",
+  resume:"../James Serez Resume.pdf",
   survey: "../manulife/manulife_survey.png",
   persona: "../manulife/manulife_persona.png",
   competitors: "../manulife/manulife_competitors.png",

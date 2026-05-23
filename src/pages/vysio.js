@@ -4,7 +4,7 @@ const data = {
   title: "Vysio",
   description: "Vysio is a product that sets out to reimagine physiotherapy rehabilitation through enhanced tracking, new communication pathways and comprehensive analytics.",
   banner: "../vysio/vysio_banner.png",
-  resume: "../Resume.pdf",
+  resume: "../James Serez Resume.pdf",
   dashboard: "../vysio/dashboard.gif",
   plan_creation: "../vysio/plan-creation.gif",
   session_review: "../vysio/session-review.gif",
